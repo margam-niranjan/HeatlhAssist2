@@ -17,6 +17,7 @@ public class BMI extends AppCompatActivity {
     private EditText weightEditText;
     private EditText heightEditText;
     private TextView resultTextView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +31,7 @@ public class BMI extends AppCompatActivity {
         weightEditText = findViewById(R.id.editTextWeight);
         heightEditText = findViewById(R.id.editTextHeight);
         resultTextView = findViewById(R.id.calculated);
-    }
-    public void calculateTheBMI(View view){
+
         Button calculateButton = findViewById(R.id.button);
         calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,8 +39,8 @@ public class BMI extends AppCompatActivity {
                 calculateBMI();
             }
         });
-
     }
+
     private void calculateBMI() {
         String weightStr = weightEditText.getText().toString();
         String heightStr = heightEditText.getText().toString();
@@ -50,7 +50,19 @@ public class BMI extends AppCompatActivity {
             double height = Double.parseDouble(heightStr) / 100; // Convert cm to meters
 
             double bmi = weight / (height * height);
-            resultTextView.setText(String.format("Your BMI is: %.2f", bmi));
+            String bmiCategory;
+
+            if (bmi < 18.5) {
+                bmiCategory = "Underweight";
+            } else if (bmi >= 18.5 && bmi < 24.9) {
+                bmiCategory = "Normal weight";
+            } else if (bmi >= 25 && bmi < 29.9) {
+                bmiCategory = "Overweight";
+            } else {
+                bmiCategory = "Obese";
+            }
+
+            resultTextView.setText(String.format("Your BMI is: %.2f (%s)", bmi, bmiCategory));
         } else {
             resultTextView.setText("Please enter both weight and height.");
         }

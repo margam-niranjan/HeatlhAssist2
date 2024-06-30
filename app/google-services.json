@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "949917946439",
+    "project_id": "healthassist-53ba8",
+    "storage_bucket": "healthassist-53ba8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949917946439:android:498fd16908dfc7212a1762",
+        "android_client_info": {
+          "package_name": "com.example.healthassist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv7UQrISAY0pOymEPKaEkHZfO6U9JTJwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HealthAssist</string>
+    <string name="_01_00_min">01:00 MIN</string>
+    <string name="my_map_api_key">AIzaSyDz37JtkFtNXqwg0RTolIkpcxDn22JJjU8</string>
 </resources>

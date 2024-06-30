@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Enter Your Height"
+        android:text="Enter Your Height(in cms)"
         android:textColor="#222831"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"

@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/service" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/BtnMap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -54,6 +54,52 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnBMI" />
+    <Button
+        android:id="@+id/BtnAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#31363F"
+        android:onClick="book"
+        android:padding="16dp"
+        android:text="Book An Appointment"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnMap" />
+    <Button
+        android:id="@+id/buttonOpenDialer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#31363F"
+        android:onClick="ambulance"
+        android:padding="16dp"
+        android:text="Call Nearest Hospital"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnAppointment" />
+
+    <Button
+        android:id="@+id/BtnExercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#31363F"
+        android:onClick="exercise"
+        android:padding="16dp"
+        android:text="Exercise"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOpenDialer" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
